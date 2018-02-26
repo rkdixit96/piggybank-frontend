@@ -1,0 +1,24 @@
+.shadow-card{
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    padding: 10px;
+
+}
+
+.horizontal{
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+}
+
+.vertical{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+
