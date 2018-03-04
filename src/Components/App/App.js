@@ -6,7 +6,6 @@ import './App.css';
 import Header from '../Header/Header';
 import NavBar from '../NavBar/NavBar';
 import HomeBody from '../HomeBody/HomeBody';
-import SignInBody from '../SignInBody/SignInBody';
 
 
 class App extends Component {
@@ -15,9 +14,8 @@ class App extends Component {
       <div className="App">
         <Header text="Piggy Bank" />
         <NavBar />
-        <div>
+        <div className="app-body">
           <Route exact path="/" component={HomeBody} />
-          <Route path="/signIn" component={SignInBody} />
         </div>
       </div>
     );

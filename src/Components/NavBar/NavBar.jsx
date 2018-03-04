@@ -7,12 +7,15 @@ class NavBar extends Component {
     return (
       <div className="nav-bar" >
         <div className="button-left">
-          <NavButton text="About" />
+          {/* <NavButton text="About" />
           <NavButton text="Contact Us" />
-          <NavButton text="Customer Support" />
+          <NavButton text="Customer Support" /> */}
+        </div>
+        <div>
+          <NavButton text="Sign In" />
         </div>
         <div className="button-right">
-          <NavButton text="Sign In" />
+          {/* <NavButton text="Sign In" /> */}
         </div>
 
 

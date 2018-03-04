@@ -1,15 +1,28 @@
 import React, { Component } from 'react';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 
 
 import './HomeBody.css';
 
+import SignInForm from '../SignInForm/SignInForm';
+import SignUpForm from '../SignUpForm/SignUpForm';
+
 class HomeBody extends Component {
   render() {
     return (
-      <div className="HomeBody" >
-        There will be a carousel here
+      <Router>
+        <div className="HomeBody" >
+          <div className="sign-in-form">
+            <div>
 
-      </div>
+              <Route exact path="/" component={SignInForm} />
+              <Route path="/signUp" component={SignUpForm} />
+
+            </div>
+
+          </div>
+        </div>
+      </Router>
     );
   }
 }
